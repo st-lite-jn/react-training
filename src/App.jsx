@@ -1,12 +1,10 @@
+import { ColordMeesge } from "./components/ColoredMessage";
 export const App = () => {
     //ボタンを押したときの処理
     const onClickButton = () => {
         alert();
     }
-    const blueStyle = {
-        color : "blue",
-        fontSize :"20px"
-    }
+
     const pinkStyle = {
         color:"pink",
         fontSize:"20px"
@@ -15,8 +13,8 @@ export const App = () => {
         <>
         {console.log("TEST")}
         <h1 style={{color : "red"}}>挨拶</h1>
-        <p style={blueStyle}>おげんきですか？</p>
-        <p style={pinkStyle}>おげんきです！</p>
+        <ColordMeesge color="red" fontSize="72px">お元気ですか？</ColordMeesge>
+        <p style={pinkStyle}>おげんきです</p>
         <button onClick={onClickButton}>ボタン</button>
       </>
     )
