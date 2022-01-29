@@ -1,0 +1,41 @@
+@use '../foundation/import';
+.l-footer-wrapper {
+	margin-top: auto;
+}
+.l-footer {
+	padding-top: import.spvw(16);
+	padding-bottom: import.spvw(16);
+	background-color: import.$mainColor;
+	@include import.mqMin(import.$tabletPortrait) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	> * {
+		color: import.$black;
+	}
+	&__copyright {
+		margin-top: import.spvw(20);
+		text-align: center;
+		font-size: 0.75rem;
+		@include import.mqMin(import.$tabletPortrait) {
+			margin-top: 40px;
+		}
+	}
+}
+
+.l-fnav {
+	text-align: center;
+	&__item {
+		display: inline-block;
+		color: import.$black;
+		@include import.mqMin(import.$tabletPortrait) {
+			margin-right: 8px;
+			margin-left: 8px;
+			font-size: 0.75rem;
+		}
+		@include import.mqMax(import.$smartPhone) {
+			margin-right:import.spvw(8);
+			margin-left: import.spvw(8);
+		}
+	}
+}

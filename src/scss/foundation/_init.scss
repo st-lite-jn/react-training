@@ -1,0 +1,36 @@
+@use './import';
+html {
+	font-size: import.spvw(16);
+	@include import.mqMin(import.$tabletPortrait) {
+		font-size: 16px;
+	}
+}
+body {
+	background-color: import.$baseColor;
+	color: import.$baseFontColor;
+	font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+h1,h2,h3,h4,h5,h6,strong,b {
+	font-weight: bold;
+}
+*{
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+a {
+	text-decoration: underline;
+	color : import.$linkColor;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul,ol {
+	list-style: none;
+}
