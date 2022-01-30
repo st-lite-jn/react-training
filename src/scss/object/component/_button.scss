@@ -1,5 +1,5 @@
 @use '../../foundation/import';
-.button {
+.c-button {
 	display: inline-block;
 	padding: import.spvw(8) import.spvw(20);
 	background: linear-gradient(90deg, import.$white 0%, import.$white 50%, import.$linkColor 50% ,import.$linkColor 100%);
@@ -41,38 +41,6 @@ a,button,input {
 				animation : hoverBgColor ease .5s both;
 				color: import.$white;
 			}
-		}
-	}
-}
-
-//ブロックエディタのボタン
-@include import.wpBlocks {
-	.wp-block-buttons {
-		.wp-block-button {
-			&__link {
-				&:not(.has-background) {
-					@extend .button;
-				}
-			}
-		}
-		.is-style-outline>.wp-block-button__link:not(.has-background),
-		.wp-block-button__link.is-style-outline:not(.has-background) {
-			@extend .button;
-			@extend .is-outlined;
-		}
-	}
-
-	.wp-block-file .wp-block-file__button,
-	.comment-reply-link,
-	.post-page-numbers,
-	.form-submit .submit {
-		@extend .button;
-	}
-
-	.post-page-numbers {
-		&.current {
-			@extend .button;
-			@extend .is-outlined;
 		}
 	}
 }

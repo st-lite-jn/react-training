@@ -1,6 +1,5 @@
 @use '../../foundation/import';
-input ,
-textarea {
+.c-input-text {
 	padding: import.spvw(4);
 	background-color: import.$white;
 	border:solid 1px import.$alto;

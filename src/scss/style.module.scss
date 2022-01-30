@@ -11,51 +11,12 @@
 // ==========================================================================
 @use "layout/wrapper";
 @use "layout/container";
-@use "layout/bg-layer";
 @use "layout/header";
 @use "layout/search";
 @use "layout/gnav";
 @use "layout/col";
 @use "layout/main";
 @use "layout/footer";
-
-// ==========================================================================
-// WP Blocks
-// ==========================================================================
-@use "object/wp-blocks/common";
-
-//テキスト
-@use "object/wp-blocks/heading";
-@use "object/wp-blocks/paragraph";
-@use "object/wp-blocks/list";
-@use "object/wp-blocks/quote";
-@use "object/wp-blocks/code";
-@use "object/wp-blocks/pullquote";
-@use "object/wp-blocks/table";
-
-//メディア
-@use "object/wp-blocks/image";
-@use "object/wp-blocks/gallery";
-@use "object/wp-blocks/video";
-
-//デザイン
-@use "object/wp-blocks/columns";
-@use "object/wp-blocks/post-terms";
-@use "object/wp-blocks/button";
-@use "object/wp-blocks/separator";
-
-//ウィジェット
-@use "object/wp-blocks/archives-categories";
-@use "object/wp-blocks/latest-posts";
-
-//テーマ
-@use "object/wp-blocks/query";
-
-//埋め込み
-@use "object/wp-blocks/embed";
-
-//オプション
-@use "object/wp-blocks/link";
 
 // ==========================================================================
 // Object
@@ -72,7 +33,14 @@
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
+@use "object/component/heading";
+@use "object/component/paragraph";
+@use "object/component/list";
+@use "object/component/table";
+@use "object/component/media";
+@use "object/component/button";
 @use "object/component/input";
+@use "object/component/link";
 
 // -----------------------------------------------------------------
 // Project
@@ -83,5 +51,3 @@
 @use "object/project/card";
 @use "object/project/content-header";
 @use "object/project/comment";
-
-
