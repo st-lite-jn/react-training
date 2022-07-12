@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { ColordMeesge } from "./components/ColoredMessage";
+import { Child1 } from "./components/Child1";
+import { Child4 } from "./components/Child4";
+
 import "ress";
 import classes from "./scss/style.module.scss";
 
@@ -26,7 +28,6 @@ export const App = () => {
     return (
         <div className={classes["l-container"]}>
         <h1 style={{color : "red"}}>挨拶</h1>
-        <ColordMeesge color="red" fontSize="72px">お元気ですか？</ColordMeesge>
         <p style={pinkStyle}>おげんきです</p>
         <button onClick={onClickButton}>ボタン</button>
         <p>{num}</p>
