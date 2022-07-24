@@ -1,8 +1,14 @@
+import { useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 export const App = () => {
+
+    // Stateの定義
+    const [num , setNum] = useState(0);
+    //ボタンを押したときにStateをカウントアップ
     const onClickButton = () => {
-        alert("ボタンをクリックしました");
+        setNum(( prev ) => prev + 1);
     }
+
     const headingStyle = {
         color:"red",
         fntSize:"36px"
@@ -19,6 +25,7 @@ export const App = () => {
             <p style={paraStylePink}>Paragraph</p>
             <ColoredMessage color="pink">ぼちぼちでんな</ColoredMessage>
             <button onClick={onClickButton}>ボタン</button>
+            <p>{num}</p>
         </>
        
     );
