@@ -15,8 +15,9 @@ export const App = () => {
     return (
         <>
             <h1 style={headingStyle}>Heading H1</h1>
-            <ColoredMessage />
+            <ColoredMessage color="blue">おげんきですか？</ColoredMessage>
             <p style={paraStylePink}>Paragraph</p>
+            <ColoredMessage color="pink">ぼちぼちでんな</ColoredMessage>
             <button onClick={onClickButton}>ボタン</button>
         </>
        
