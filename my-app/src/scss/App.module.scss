@@ -1,0 +1,19 @@
+.container {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.button {
+    border: solid 2px blue;
+    border-radius: 100vh;
+    background-color: white;
+    color: blue;
+    &:hover {
+        border-color: red;
+        color: red;
+    }
+}
