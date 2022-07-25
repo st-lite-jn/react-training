@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 export const App = () => {
 
@@ -8,7 +8,6 @@ export const App = () => {
     const onClickButton = () => {
         setNum(( prev ) => prev + 1);
     }
-
     const headingStyle = {
         color:"red",
         fntSize:"36px"
@@ -18,6 +17,11 @@ export const App = () => {
         color:"pink",
         fntSize:"16px"
     }
+    
+    useEffect(() =>{
+        console.log("レンダリングされました");
+    },[num]);
+
     return (
         <>
             <h1 style={headingStyle}>Heading H1</h1>
