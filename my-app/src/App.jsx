@@ -1,6 +1,7 @@
 import { useState , useEffect } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 import { CSSModule } from "./components/cssModule";
+import { StyledComponents } from "./components/styleedComponents"
 
 export const App = () => {
 
@@ -27,6 +28,7 @@ export const App = () => {
     return (
         <>
             <h1 style={headingStyle}>Heading H1</h1>
+            <StyledComponents />
             <CSSModule />
             <ColoredMessage color="blue">おげんきですか？</ColoredMessage>
             <p style={paraStylePink}>Paragraph</p>
