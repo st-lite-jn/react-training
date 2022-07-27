@@ -1,15 +1,15 @@
 /** @jsxImortSource @emotion/react */
-import { jsx , css } from "@emotion/react";
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const Emotion = () => {
     // scssの書き方がそのまま可能な書き方
     const containerStyle = css`
-        width:600px;
-        margin-right:auto;
-        margin-left:auto;
-        border:solid 2px #999;
-    `;
+    width:600px;
+    margin-right:auto;
+    margin-left:auto;
+    border:solid 2px #999;
+`;
     //インラインスタイルの書き方
     const titleStyle = css({
         fontSize:"36px",
