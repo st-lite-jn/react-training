@@ -3,6 +3,8 @@ import { ColoredMessage } from "./components/ColoredMessage";
 import { CSSModule } from "./components/cssModule";
 import { StyledComponents } from "./components/styleedComponents"
 import { Emotion } from "./components/Emotion";
+import { TailwindCss } from "./components/TailwindCss";
+import './index.css';
 
 export const App = () => {
 
@@ -29,6 +31,7 @@ export const App = () => {
     return (
         <>
             <h1 style={headingStyle}>Heading H1</h1>
+            <TailwindCss />
             <Emotion />
             <StyledComponents />
             <CSSModule />
