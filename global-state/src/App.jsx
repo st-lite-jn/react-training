@@ -8,13 +8,8 @@ const App = () => {
 
   // 切り替え押下時
   const onClickSwitch = () => {
-    console.log(isAdmin);
     setIsAdmin(!isAdmin)
-  
   } 
-
-
-
   return (
     <div>
       {isAdmin ? <span>管理者です</span> : <span>管理者以外です</span>}
