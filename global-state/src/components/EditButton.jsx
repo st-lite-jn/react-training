@@ -8,14 +8,13 @@ const style = {
   borderRadius: "8px",
 }
 
-export const EditButton = props => {
-  // Context内のisAdminを取得
-  const { isAdmin } = props;
-  const contextValue = useContext(AdminFlagContext);
-  console.log(contextValue);
-  return (
-    <button style={style} disabled={!isAdmin}>
-      編集
-    </button>
-  );
+export const EditButton = () => {
+    // Context内のisAdminを取得
+    const { isAdmin } = useContext(AdminFlagContext);
+    console.log(isAdmin);
+    return (
+        <button style={style} disabled={!isAdmin}>
+            編集
+        </button>
+    );
 };
